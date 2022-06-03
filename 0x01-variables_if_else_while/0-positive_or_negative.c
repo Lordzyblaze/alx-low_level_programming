@@ -4,10 +4,8 @@
 
 #include <stdio.h>
 
-
-
 /**
- *
+ * Main - Prints a random number and states whether
  * This program will assign a random number to the variable n
  *
  * It is positive, negative, or zero.
@@ -27,7 +25,7 @@ int main(void)
 
 
 	srand(time(0));
-
+ /* your code goes there */
 	n = rand() - RAND_MAX / 2;
 
 

@@ -8,15 +8,15 @@
 
 /**
  *
- * * This program will assign a random number to the variable n
+ * This program will assign a random number to the variable n
  *
- * * It is positive, negative, or zero.
+ * It is positive, negative, or zero.
  *
- * *
  *
- * * Return: Always 0.
  *
- * */
+ * Return: Always 0.
+ *
+ */
 
 int main(void)
 

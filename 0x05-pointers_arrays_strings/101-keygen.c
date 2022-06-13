@@ -1,4 +1,4 @@
-#import "main.h"
+#include <stdio.h>
 /**
  * main -
  * Return:

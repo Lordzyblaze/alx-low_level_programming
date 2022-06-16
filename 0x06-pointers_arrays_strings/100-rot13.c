@@ -21,8 +21,8 @@ break;
 }
 s[a] += 13;
 break;
+}
 a++;
 }
 return (s);
-}
 }

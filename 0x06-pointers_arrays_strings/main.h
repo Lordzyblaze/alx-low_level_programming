@@ -11,4 +11,5 @@ char *cap_string(char *);
 int _strcmp(char *s1, char *s2);
 char *rot13(char *);
 
+
 #endif /* MAIN_H */

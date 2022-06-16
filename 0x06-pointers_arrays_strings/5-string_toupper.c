@@ -1,19 +1,17 @@
 #include "main.h"
-
 /**
- * _strncpy - a function that copies a string
- * @dest: copy to
- * @src: copy from
- * @n: input number of char
- * Return: Always 0 (Success)
+ * string_toupper - a function that changes all lower of a string to upper
+ * @n: input string
+ * Return: capitialized string
  */
-char *_strncpy(char *dest, char *src, int n)
+char *string_toupper(char *n)
 {
 int i;
-for (i = 0; src[i] != '\0'; i++)
-if (i < n)
-dest[i] = src[i];
-while (i < n)
-dest[i++] = '\0';
-return (dest);
+
+for (i = 0; n[i] != '\0'; i++)
+{
+if (n[i] >= 'a' && n[i] <= 'z')
+n[i] = n[i] - 32;
+}
+return (n);
 }

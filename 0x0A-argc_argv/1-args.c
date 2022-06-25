@@ -10,14 +10,14 @@
 
 int main(int argc, char *argv[])
 {
-int x;
+int i;
 
 if (argc == 1)
 printf("%d\n", argc - 1);
 else
 {
-for (x = 0; *argv; x++, argv++);
-printf("%d\n", x - 1);
+for (i = 0; *argv; i++, argv++);
+printf("%d\n", i - 1);
 }
 return (0);
 }

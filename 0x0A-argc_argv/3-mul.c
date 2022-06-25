@@ -32,7 +32,7 @@ else if (i == 2)
 k = atoi(argv[i]);
 }
 }
-mult = j * k;
+mult = j *k;
 printf("%d\n", mult);
 }
 return (0);

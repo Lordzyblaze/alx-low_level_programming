@@ -1,31 +1,53 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * main - Prints the addition of positive numbers,
- *        followed by a new line.
- * @argc: The number of arguments passed to the program.
- * @argv: An array of pointers to the arguments.
+ * main - Program that prints the minimum number of coins to make
+ * change for an amount of money.
+ * @argc: count
+ * @argv: array
  *
- * Return: If one of the numbers contains symbols that are non-digits - 1.
- *         Otherwise - 0.
+ * Return: Always 0
  */
 int main(int argc, char *argv[])
 {
-int num, digit, sum = 0;
+int values[] = {25, 10, 5, 2, 1}, i, j, result = 0, n;
 
-for (num = 1; num < argc; num++)
+if (argc == 2)
 {
-for (digit = 0; argv[num][digit]; digit++)
+n = atoi(argv[1]);
+for (i = 0; i < 5; i++)
 {
-if (argv[num][digit] < '0' || argv[num][digit] > '9')
+if (n < 0)
+{
+printf("0");
+return (0);
+}
+if (n == 0)
+{
+printf("%d\n", result);
+return (0);
+}
+if (values[i] <= n)
+{
+result += n / values[i];
+n = abs(n - (values[i] * result));
+}
+for (j = 0; j < 5; j++)
+{
+if (n == values[j])
+{
+result += 1;
+n = 0;
+}
+}
+}
+printf("%d\n", result);
+}
+else
 {
 printf("Error\n");
 return (1);
 }
-}
-sum += atoi(argv[num]);
-}
-printf("%d\n", sum);
 return (0);
 }

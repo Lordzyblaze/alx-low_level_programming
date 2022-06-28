@@ -8,18 +8,21 @@
  */
 char *_strdup(char *str)
 {
-int i, end;
-char *array;
+int i = 1, j = 0;
+char *s;
 if (str == NULL)
+	return (NULL);
+while str(i)
+i++;
+s = (char  *) malloc(i *sizeof(char) + 1
+if  (s == Null)
 return (NULL);
-for (end = 0; end <= *str; end++)
+while (j < i)
 {
+s[j] = s[j];
+j++
 }
-end += 1;
-array = malloc(sizeof(char) * end);
-for (i = 0; i < end; i++)
-array[i] = str[i];
-if (array == NULL)
-return (NULL);
-return (array);
+s[j] = '\0'
+return (s)
+}
 }

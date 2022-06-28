@@ -14,8 +14,8 @@ if (str == NULL)
 	return (NULL);
 while (str[i])
 i++;
-s = (char  *) malloc(i *sizeof(char) + 1
-if  (s == Null)
+s = (char  *) malloc(i *sizeof(char) + 1)
+if(s == Null)
 return (NULL);
 while (j < i)
 {
@@ -23,6 +23,6 @@ s[j] = s[j];
 j++
 }
 s[j] = '\0'
-return (s)
+return (s);
 }
 }

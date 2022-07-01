@@ -39,7 +39,7 @@ s1 = "";
 if (!s2)
 s2 = "";
 total += _strlen(s1) + n;
-new = malloc((total* sizeof(char)) + 1);
+new = malloc((total  *sizeof(char)) + 1);
 if (new == NULL)
 {
 return (NULL);

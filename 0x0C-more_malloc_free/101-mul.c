@@ -48,7 +48,7 @@ f1 = n1[i] - '0';
 for (j = len2 - 1; j >= 0; j--)
 {
 f2 = n2[j] - '0';
-sum += product[i + j + 1] + (f1 * f2);
+sum += product[i + j + 1] + (f1 *f2);
 product[i + j + 1] = sum % 10;
 sum /= 10;
 }

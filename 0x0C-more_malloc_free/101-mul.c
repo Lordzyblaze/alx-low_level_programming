@@ -1,4 +1,6 @@
+#include "main.h"
 #include <stdio.h>
+
 #include <stdlib.h>
 /**
  * int_calloc - special calloc but 4 int arrays

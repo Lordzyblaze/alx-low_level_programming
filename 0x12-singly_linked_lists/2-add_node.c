@@ -10,27 +10,28 @@ int _strlen_recursion(char *s);
  **/
 list_t *add_node(list_t **head, const char *str)
 {
-list_t *first;
+list_t *new;
 
-first = malloc(sizeof(list_t));
-if (first == NULL)
+new = malloc(sizeof(list_t));
+if (new == NULL)
 {
 return (NULL);
 }
-first->str = strdup(str);
-if (!first->str)
+new->str = strdup(str);
+if (!new->str)
 {
 free(new);
 return (NULL);
-}
-first->len = _strlen_recursion(first->str);
-first->next = *head;
-*head = first;
-return (first);
+														}
+new->len = _strlen_recursion(new->str);
+new->next = *head;
+*head = new;
+
+return (new);
 }
 
 /**
- * _strlen_recursion - returns the length of a string.
+* _strlen_recursion - returns the length of a string.
  * @s: string.
  * Return: length of @s.
  */

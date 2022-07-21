@@ -1,6 +1,6 @@
 /*
  * File: 4-clear_bit.c
- * Auth: Brennan D Baraban
+ * Auth: Adams Adjartey
  */
 
 #include "main.h"

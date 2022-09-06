@@ -1,5 +1,5 @@
-#ifndef _SHARED_LIB_H_
-#define _SHARED_LIB_H_
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdlib.h>
 
